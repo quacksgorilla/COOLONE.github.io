@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Site</title>
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        #container {
+            text-align: center;
+            padding: 30px;
+            background: #2e2e2e;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), inset 0 -2px 5px rgba(0, 0, 0, 0.4);
+        }
+        input[type="password"] {
+            padding: 15px;
+            border-radius: 25px;
+            border: 1px solid #444;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin-top: 20px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.4);
+        }
+        button {
+            padding: 15px 30px;
+            border-radius: 25px;
+            border: none;
+            background-color: #3a3a3a;
+            color: #ffffff;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), inset 0 -2px 5px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #4a4a4a;
+            transform: translateY(-3px);
+        }
+        button:active {
+            background-color: #2a2a2a;
+            transform: translateY(0);
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            background: #2e2e2e;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+        #message.success {
+            background: #1e1e1e;
+            color: #4caf50;
+        }
+        #message.error {
+            background: #1e1e1e;
+            color: #ff4c4c;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Password</h1>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+function _0xab8b(_0x5bbb9e,_0x35889f){const _0x2c8ce7=_0x2c8c();return _0xab8b=function(_0xab8b6b,_0x57c4ac){_0xab8b6b=_0xab8b6b-0x122;let _0x2844b5=_0x2c8ce7[_0xab8b6b];return _0x2844b5;},_0xab8b(_0x5bbb9e,_0x35889f);}function _0x2c8c(){const _0x504d28=['1389684UqiqTd','331192VIsnMA','1605394KRGWsG','UGluZyBxdWFja3MgY29udGFpbmluZyBhIG1lc3NhZ2Ugc2F5aW5nICJkdWNrcyBhcmUgY29vbCIu','127615zAhpUw','querySelector','remove','16GSvEpw','message','60VtOWLS','input','4JQNCHm','display','833769ghVBfZ','getElementById','Incorrect\x20password','378PCzPfw','button','className','textContent','none','1017796cYjPCa','5791643nfVgmn'];_0x2c8c=function(){return _0x504d28;};return _0x2c8c();}(function(_0x19d983,_0x47cba7){const _0x34d90d=_0xab8b,_0x5190c6=_0x19d983();while(!![]){try{const _0x511ede=parseInt(_0x34d90d(0x124))/0x1+parseInt(_0x34d90d(0x12e))/0x2*(-parseInt(_0x34d90d(0x123))/0x3)+parseInt(_0x34d90d(0x138))/0x4+-parseInt(_0x34d90d(0x127))/0x5*(-parseInt(_0x34d90d(0x133))/0x6)+-parseInt(_0x34d90d(0x125))/0x7*(parseInt(_0x34d90d(0x12a))/0x8)+parseInt(_0x34d90d(0x130))/0x9*(parseInt(_0x34d90d(0x12c))/0xa)+-parseInt(_0x34d90d(0x122))/0xb;if(_0x511ede===_0x47cba7)break;else _0x5190c6['push'](_0x5190c6['shift']());}catch(_0x28937b){_0x5190c6['push'](_0x5190c6['shift']());}}}(_0x2c8c,0xcc897));function checkPassword(){const _0x1bef4c=_0xab8b,_0x5c1ff5=document[_0x1bef4c(0x131)]('password')['value'],_0xf90b08='d2VhcmVyZXRydXN0',_0x17c443=atob(_0xf90b08),_0x535d6f=document[_0x1bef4c(0x131)](_0x1bef4c(0x12b)),_0x3e7f4b=_0x1bef4c(0x126);_0x5c1ff5===_0x17c443?(document[_0x1bef4c(0x128)](_0x1bef4c(0x12d))[_0x1bef4c(0x129)](),document[_0x1bef4c(0x128)](_0x1bef4c(0x134))[_0x1bef4c(0x129)](),_0x535d6f[_0x1bef4c(0x136)]=atob(_0x3e7f4b),_0x535d6f[_0x1bef4c(0x135)]='success',_0x535d6f['style'][_0x1bef4c(0x12f)]='block'):(_0x535d6f[_0x1bef4c(0x136)]=_0x1bef4c(0x132),_0x535d6f[_0x1bef4c(0x135)]='error',_0x535d6f['style'][_0x1bef4c(0x12f)]='block',setTimeout(()=>_0x535d6f['style'][_0x1bef4c(0x12f)]=_0x1bef4c(0x137),0xbb8));}    </script>
+</body>
+</html>
